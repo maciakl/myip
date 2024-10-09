@@ -9,3 +9,20 @@ A simple command-line tool to print the default local outbound IP address of the
       -p, --public     Print the public IP address instead (requires internet access)
       -v, --version    Print version information and exit
       -h, --help       Print this message and exit
+
+## Installation
+
+Install via go:
+
+    go install github.com/maciakl/myip@latest
+ 
+ On Windows, this tool is also distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
+
+ First, you need to add my bucket:
+
+    scoop bucket add maciak https://github.com/maciakl/bucket
+    scoop update
+
+ Next simply run:
+ 
+    scoop install myip
