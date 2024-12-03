@@ -15,14 +15,18 @@ A simple command-line tool to print the default local outbound IP address of the
 Install via go:
 
     go install github.com/maciakl/myip@latest
- 
- On Windows, this tool is also distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
 
- First, you need to add my bucket:
+On Linux:
+
+    p="myip" && wget -qN "https://github.com/maciakl/${p}/releases/latest/download/${p}_lin.zip" && unzip -oq ${p}_lin.zip && rm -f ${p}_lin.zip && chmod +x ${p} && sudo mv ${p} /usr/local/bin
+ 
+On Windows, this tool is also distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
+
+First, you need to add my bucket:
 
     scoop bucket add maciak https://github.com/maciakl/bucket
     scoop update
 
- Next simply run:
+Next simply run:
  
     scoop install myip
