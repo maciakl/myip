@@ -12,13 +12,23 @@ A simple command-line tool to print the default local outbound IP address of the
 
 ## Installation
 
-Install via go:
+### All platforms:
+
+Install via `go`:
 
     go install github.com/maciakl/myip@latest
 
-On Linux:
+### Linux
+
+On Linux (requires `wget` & `unzip`, installs to `/usr/local/bin`):
 
     p="myip" && wget -qN "https://github.com/maciakl/${p}/releases/latest/download/${p}_lin.zip" && unzip -oq ${p}_lin.zip && rm -f ${p}_lin.zip && chmod +x ${p} && sudo mv ${p} /usr/local/bin
+
+To uninstall, simply delete it:
+
+    rm -f /usr/local/bin/myip
+
+### Windows
  
 On Windows, this tool is also distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
 
