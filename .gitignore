@@ -4,3 +4,5 @@ myip.zip
 myip.tgz
 myip_*.zip
 myip_*.tgz
+# Added by goreleaser init:
+dist/
