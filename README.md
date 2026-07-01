@@ -20,13 +20,17 @@ Install via `go`:
 
 ### Linux
 
-On Linux (requires `wget` & `unzip`, installs to `/usr/local/bin`):
+Use [grab](https://github.com/maciakl/grab):
 
-    p="myip" && wget -qN "https://github.com/maciakl/${p}/releases/latest/download/${p}_lin.zip" && unzip -oq ${p}_lin.zip && rm -f ${p}_lin.zip && chmod +x ${p} && sudo mv ${p} /usr/local/bin
+    grab maciakl/myip
 
-To uninstall, simply delete it:
+### macOS
 
-    rm -f /usr/local/bin/myip
+Use `homebrew`:
+
+    brew tap maciakl/tap
+    brew trust maciakl/tap
+    brew install myip
 
 ### Windows
  
