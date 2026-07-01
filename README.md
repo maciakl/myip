@@ -20,7 +20,7 @@ Install via `go`:
 
 ### Linux
 
-Use [grab](https://github.com/maciakl/grab):
+Use `grab` (see [grab](https://github.com/maciakl/grab)):
 
     grab maciakl/myip
 
